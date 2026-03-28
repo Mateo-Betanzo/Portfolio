@@ -3,24 +3,6 @@ const circles = document.querySelectorAll('.circle')
 const firstCircle = document.querySelector('#uno')
 let isClicked = false
 
-// const openMenu = document.querySelector('.open-menu')
-// const closeMenu = document.querySelector('.close-menu')
-// const menu = document.querySelector('.list-menu')
-
-// openMenu.addEventListener('click', () => {
-//     menu.classList.add('active')
-//     openMenu.style.visibility = 'hidden'
-// })
-
-// closeMenu.addEventListener('click', () => {
-//     menu.classList.remove('active')
-//     openMenu.style.visibility = 'visible'
-// })
-
-
-
-
-
 
 circles.forEach(function(circle){
     circle.x = 0
