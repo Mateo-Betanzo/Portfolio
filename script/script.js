@@ -1,8 +1,25 @@
 const coords = { x: 0, y: 0 }
 const circles = document.querySelectorAll('.circle')
 const firstCircle = document.querySelector('#uno')
+const openMenu = document.querySelector('.open-menu')
+const closedMenu = document.querySelector('.closed-menu')
+const menu = document.querySelector('.list-menu')
+const links = document.querySelectorAll('.list-menu .text a')
 let isClicked = false
 
+openMenu.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
+
+closedMenu.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.toggle('active')
+    })
+});
 
 circles.forEach(function(circle){
     circle.x = 0
