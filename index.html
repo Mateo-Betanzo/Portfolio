@@ -1,176 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script/script.js" defer></script>
-    <title>Mateo Betanzo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Mateo Betanzo</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="menu-bar">
-            <button class="open-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg></button>
-            <ul class="list-menu">
-                <button class="closed-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                <li class="text"><a href="#menu">Home</a></li>
-                <li class="text"><a href="#proyects">Proyects</a></li>
-                <li class="text"><a href="#about-me">About me</a></li>
-                <li class="text"><a href="#contact-me">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="cursor">
-        <div class="circle" id="uno"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+  <!-- Fondo -->
+  <div class="bg-gradient"></div>
+
+  <div class="wrapper">
+
+    <!-- ─── NAV ─── -->
+    <nav id="nav">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu">
+        <a href="#hero">Inicio</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+      <h1 class="hero-name">Mateo Betanzo</h1>
+      <p class="hero-role">
+        Estudiante de Técnico en Programación, adquiriendo experiencia en desarrollo web, aplicaciones y creación de proyectos personales.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-ghost">Contáctame</a>
+        <a href="#projects" class="btn-primary">
+          Ver proyectos
+          <i class="btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#12082a">
+              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+            </svg>
+          </i>
+        </a>
+      </div>
     </section>
 
-    <main>
-        <section class="hero" id="menu">
-            <div class="hero-text">
-                <div class="hero-name">
-                    <p class="text-special">Tecnico en programación</p>
-                    <h1 class="title">MATEO BETANZO</h1>
-                </div>
-            </div>
-        </section>
+    <div class="divider"></div>
 
-        <section class="section-model" id="proyects">
-            <div class="subtitle">
-                <h2>PROYECTS</h2>
-            </div>
-            <div class="container-proyects">
-                <div class="proyects">
-                    <div class="card">
-                        <a href="" class="btn-visit">
-                            <p>Visit</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
-                        </a>
-                        <div class="card-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="content-card">
-                            <div class="card-text">
-                                <p>Text</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="" class="btn-visit">
-                            <p>Visit</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
-                        </a>
-                        <div class="card-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="content-card">
-                            <div class="card-text">
-                                <p>Text</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="" class="btn-visit">
-                            <p>Visit</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
-                        </a>
-                        <div class="card-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="content-card">
-                            <div class="card-text">
-                                <p>Text</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ─── PROYECTOS ─── -->
+    <section id="projects">
+      <h2 class="section-title reveal">Proyectos</h2>
 
-        <section class="section-model" id="about-me">
-            <div class="subtitle">
-                <h2>ABOUT ME</h2>
-            </div>
-            <div class="aboutme-text">
-                <p class="text">
-                    Soy Mateo un desarrollador apasionado por la tecnología y la programación. Actualmente me encuentro en constante aprendizaje, explorando nuevas herramientas y mejorando mis habilidades para crear soluciones eficientes y funcionales.
-                    <br><br>
-                    En mi tiempo libre me gusta mejorar mis proyectos personales y mantenerme actualizado con las tendencias del mundo de la tecnología. También disfruto de actividades como jugar videojuegos y ver fútbol, lo que me ayuda a equilibrar lo técnico con el entretenimiento.
-                    <br><br>
-                    Mi objetivo es seguir creciendo como desarrollador, adquirir experiencia profesional y participar en proyectos que me permitan aportar valor y seguir aprendiendo.  
-                </p>
-            </div>
-        </section>
+      <div class="projects-grid">
 
-        <section class="section-model" id="contact-me">
-            <div class="subtitle">
-                <h2>CONTACT ME</h2>
-            </div>
-            
-            <div class="contact-content">
-                <a href="mailto:matebeta2912@gmail.com" class="btn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16" /><path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1" /><path d="M16 4l-4 4l-4 -4" /><path d="M4 6.5l8 7.5l8 -7.5" /></svg>
-                    <p>Gmail</p>
-                </a>
-                <a href="https://wa.me/542944288508" class="btn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
-                    <p>WhatsApp</p>
-                </a>
-                <a href="https://github.com/Mateo-Betanzo" class="btn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
-                    <p>GitHub</p>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="info-footer">
-            <div class="sections text">
-                <ul class="list">
-                    <li class="text"><a href="#menu">Home</a></li>
-                    <li class="text"><a href="#proyects">Proyects</a></li>
-                    <li class="text"><a href="#about-me">About me</a></li>
-                    <li class="text"><a href="#contact-me">Contact me</a></li>
-                </ul>
-            </div>
-            <div class="contact text">
-                <ul class="list">
-                    <li class="text">
-                        <a href="mailto:matebeta2912@gmail.com" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16" /><path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1" /><path d="M16 4l-4 4l-4 -4" /><path d="M4 6.5l8 7.5l8 -7.5" /></svg>
-                        </a>
-                    </li>
-                    <li class="text">
-                        <a href="https://wa.me/542944288508" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
-                        </a>
-                    </li>
-                    <li class="text">
-                        <a href="https://www.instagram.com/mateobetanzo_/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
-                        </a>
-                    </li>
-                    <li class="text">
-                        <a href="https://github.com/Mateo-Betanzo" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-name">
-                <h2>MATEO BETANZO</h2>
-            </div>
+        <div class="project-card reveal">
+          <p class="project-number">01</p>
+          <h3 class="project-title">ZigZag Patagonia</h3>
+          <p class="project-description">Sitio web estático y responsive para una empresa de reciclaje textil, con enfoque en sustentabilidad.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="https://zigzagpatagonia.com/" target="_blank" class="project-link">
+            Ver proyecto
+            <i class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B8E1FF">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+              </svg>
+            </i>
+          </a>
         </div>
+
+        <div class="project-card reveal">
+          <p class="project-number">02</p>
+          <h3 class="project-title">...</h3>
+          <p class="project-description">...</p>
+          <div class="project-tags">
+            <span class="tag"></span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+          </div>
+          <a href="#" target="_blank" class="project-link">
+            Ver proyecto
+            <i class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B8E1FF">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+              </svg>
+            </i>
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <p class="project-number">03</p>
+          <h3 class="project-title">...</h3>
+          <p class="project-description">...</p>
+          <div class="project-tags">
+            <span class="tag"></span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+          </div>
+          <a href="#" target="_blank" class="project-link">
+            Ver proyecto
+            <i class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B8E1FF">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+              </svg>
+            </i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ─── TECH STACK ─── -->
+    <section id="stack">
+      <h2 class="section-title reveal">Stack</h2>
+
+      <div class="stack-grid">
+
+        <!-- Frontend -->
+        <div class="stack-category">
+          <h3 class="stack-category-title">Frontend</h3>
+          <div class="stack-items">
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-html5" style="color: #E34F26;"></i></span>
+              <span class="stack-name">HTML</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i></span>
+              <span class="stack-name">CSS</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-react" style="color: #61DAFB;"></i></span>
+              <span class="stack-name">React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="stack-category">
+          <h3 class="stack-category-title">Backend</h3>
+          <div class="stack-items">
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i></span>
+              <span class="stack-name">JavaScript</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-python" style="color: #3776AB;"></i></span>
+              <span class="stack-name">Python</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-java" style="color: #ED8B00;"></i></span>
+              <span class="stack-name">Java</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-php" style="color: #777BB4;"></i></span>
+              <span class="stack-name">PHP</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48">
+                  <rect width="36" height="36" x="6" y="6" fill="#1976d2"/>
+                  <polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"/>
+                  <path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"/>
+                </svg>
+              </span>
+              <span class="stack-name">TypeScript</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-swift" style="color: #F05138;"></i></span>
+              <span class="stack-name">Swift</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramientas -->
+        <div class="stack-category">
+          <h3 class="stack-category-title">Herramientas</h3>
+          <div class="stack-items">
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-github" style="color: #ffffff;"></i></span>
+              <span class="stack-name">GitHub</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon"><i class="fa-brands fa-git-alt" style="color: #F05032;"></i></span>
+              <span class="stack-name">Git</span>
+            </div>
+            <div class="stack-item reveal">
+              <span class="stack-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 48 48">
+                  <path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path><path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
+                </svg>
+              </span>
+              <span class="stack-name">VScode</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ─── SOBRE MÍ ─── -->
+    <section id="about">
+      <h2 class="section-title reveal">Sobre mí</h2>
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p>
+            Soy estudiante de <strong>Técnico en Programación</strong> con interés en el desarrollo de aplicaciones y tecnologías web. Me gusta aprender nuevas herramientas y crear proyectos personales para seguir mejorando mis habilidades.
+          </p>
+
+          <p>
+            Actualmente estoy enfocado en adquirir <strong>experiencia práctica</strong> en programación, mientras continúo formándome en el área tecnológica.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ─── CONTACTO ─── -->
+    <section id="contact">
+      <h2 class="contact-title reveal">Contacto</h2>
+
+      <div class="contact-buttons reveal">
+
+        <a href="https://wa.me/542944288508" target="_blank" class="contact-btn contact-btn--whatsapp">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <div class="contact-label">
+            <span class="contact-platform">WhatsApp</span>
+          </div>
+        </a>
+
+        <a href="mailto:matebeta2912@gmail.com" target="_blank" class="contact-btn contact-btn--gmail">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#EA4335">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+            </svg>
+          </div>
+          <div class="contact-label">
+            <span class="contact-platform">Gmail</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/Mateo-Betanzo" target="_blank" class="contact-btn contact-btn--github">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#a78bfa">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="contact-label">
+            <span class="contact-platform">GitHub</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3 class="footer-col-title">Secciones</h3>
+        <ul class="footer-list">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">Contacto</h3>
+        <ul class="footer-list">
+          <li><a href="https://wa.me/542944288508" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:matebeta2912@gmail.com" target="_blank">Gmail</a></li>
+          <li><a href="https://github.com/Mateo-Betanzo" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
     </footer>
+
+  </div>
+
 </body>
 </html>
