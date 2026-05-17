@@ -30,19 +30,9 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font);
   color: var(--text-primary);
-  background: #020E26;
+  background-color: var(--bg);
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-/* ─── FONDO ─── */
-.bg-gradient {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  background: var(--bg);
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
 }
 
 /* ─── LAYOUT ─── */
